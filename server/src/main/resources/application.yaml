@@ -11,8 +11,8 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: units-create-update
+        - id: units
           uri: ${microservices.urls.archive}
           predicates:
             - Method=POST,PATCH,PUT,GET
-            - Path=/api/v1/units
+            - Path=/api/v1/units,/api/v1/units/{number}
