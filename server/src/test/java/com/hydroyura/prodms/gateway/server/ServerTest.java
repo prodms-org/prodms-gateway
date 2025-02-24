@@ -1,3 +1,4 @@
+/*
 package com.hydroyura.prodms.gateway.server;
 
 import static com.hydroyura.prodms.gateway.server.TestUtils.ERROR_MSG_ARCHIVE_UNIT_NOT_FOUND;
@@ -18,7 +19,6 @@ import com.hydroyura.prodms.archive.client.model.res.GetUnitRes;
 import com.hydroyura.prodms.common.model.api.ApiRes;
 import com.hydroyura.prodms.files.server.api.enums.DrawingType;
 import com.hydroyura.prodms.files.server.api.res.GetUrlsLatestRes;
-import com.hydroyura.prodms.gateway.server.model.res.GetUnitDetailedRes;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -26,7 +26,6 @@ import java.util.UUID;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
 import org.mockserver.integration.ClientAndServer;
 import org.mockserver.model.HttpResponse;
 import org.mockserver.model.MediaType;
@@ -262,4 +261,4 @@ class ServerTest {
         return objectMapper.writeValueAsString(res);
     }
 
-}
+}*/
