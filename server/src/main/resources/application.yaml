@@ -15,4 +15,4 @@ spring:
           uri: ${microservices.urls.archive}
           predicates:
             - Method=POST,PATCH,PUT
-            - Path=/api/v1/units
+            - Path=/api/v1/units/*
