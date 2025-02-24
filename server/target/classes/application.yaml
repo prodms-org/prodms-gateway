@@ -3,9 +3,6 @@ microservices:
     archive: ${ARCHIVE_URL:http://localhost:8089}
     files: ${FILES_URL:http://localhost:8088}
 
-server:
-  port: 8085
-
 logs:
   detail:
     enabled: ${LOGS_DETAIL_ENABLED:true}
