@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.basic.app.id }}-env-cm
+  namespace: {{ .Release.namespace }}
+data:
+  ARCHIVE_URL: {{ required "'microservices.urls.archive' parameter is required" .Values.microservices.urls.archive | quote }}
+  FILES_URL: {{ required "'microservices.urls.files' parameter is required" .Values.microservices.urls.files | quote }}
