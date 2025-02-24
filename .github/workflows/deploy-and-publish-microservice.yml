@@ -1,0 +1,13 @@
+name: Microservice standard workflow
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  reuse:
+    uses: prodms-org/prodms-workflows/.github/workflows/microservice-workflow-standard.yml@master
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}

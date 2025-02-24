@@ -1,0 +1,18 @@
+microservices:
+  urls:
+    archive: ${ARCHIVE_URL:http://localhost:8089}
+    files: ${FILES_URL:http://localhost:8088}
+
+logs:
+  detail:
+    enabled: ${LOGS_DETAIL_ENABLED:true}
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: units-create-update
+          uri: ${microservices.urls.archive}
+          predicates:
+            - Method=POST,PATCH,PUT
+            - Path=/api/v1/units

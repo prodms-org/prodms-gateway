@@ -1,0 +1,8 @@
+/home/yury/projects/prodms/gateway/server/src/main/java/com/hydroyura/prodms/gateway/server/Server.java
+/home/yury/projects/prodms/gateway/server/src/main/java/com/hydroyura/prodms/gateway/server/SharedConstants.java
+/home/yury/projects/prodms/gateway/server/src/main/java/com/hydroyura/prodms/gateway/server/config/AggregationGetUnitRewriteFunction.java
+/home/yury/projects/prodms/gateway/server/src/main/java/com/hydroyura/prodms/gateway/server/config/MapperConfig.java
+/home/yury/projects/prodms/gateway/server/src/main/java/com/hydroyura/prodms/gateway/server/config/RoutesConfig.java
+/home/yury/projects/prodms/gateway/server/src/main/java/com/hydroyura/prodms/gateway/server/mapper/GetUnitResToGetUnitDetailResMapper.java
+/home/yury/projects/prodms/gateway/server/src/main/java/com/hydroyura/prodms/gateway/server/service/filter/global/LogGlobalFilter.java
+/home/yury/projects/prodms/gateway/server/src/main/java/com/hydroyura/prodms/gateway/server/service/reponsemodifier/GetUnitResponseModifier.java

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hydroyura.prodms.gateway.server.ServerTest" time="6.027" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/yury/projects/prodms/gateway/server/target/test-classes:/home/yury/projects/prodms/gateway/server/target/classes:/home/yury/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.3/jackson-datatype-jsr310-2.17.3.jar:/home/yury/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.3/jackson-annotations-2.17.3.jar:/home/yury/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.3/jackson-core-2.17.3.jar:/home/yury/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.3/jackson-databind-2.17.3.jar:/home/yury/.m2/repository/com/hydroyura/prodms/files/client/1.0.0-SNAPSHOT/client-1.0.0-SNAPSHOT.jar:/home/yury/.m2/repository/com/hydroyura/prodms/gateway/client/1.0.0-SNAPSHOT/client-1.0.0-SNAPSHOT.jar:/home/yury/.m2/repository/com/hydroyura/prodms/archive/client/1.0.0-SNAPSHOT/client-1.0.0-SNAPSHOT.jar:/home/yury/.m2/repository/org/apache/commons/commons-text/1.12.0/commons-text-1.12.0.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-starter-gateway/4.1.6/spring-cloud-starter-gateway-4.1.6.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-starter/4.1.5/spring-cloud-starter-4.1.5.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-context/4.1.5/spring-cloud-context-4.1.5.jar:/home/yury/.m2/repository/org/springframework/security/spring-security-crypto/6.3.6/spring-security-crypto-6.3.6.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-commons/4.1.5/spring-cloud-commons-4.1.5.jar:/home/yury/.m2/repository/org/springframework/security/spring-security-rsa/1.1.3/spring-security-rsa-1.1.3.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-gateway-server/4.1.6/spring-cloud-gateway-server-4.1.6.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.8/spring-boot-starter-validation-3.3.8.jar:/home/yury/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/home/yury/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.2.Final/hibernate-validator-8.0.2.Final.jar:/home/yury/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/yury/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/yury/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/home/yury/.m2/repository/io/projectreactor/addons/reactor-extra/3.5.2/reactor-extra-3.5.2.jar:/home/yury/.m2/repository/io/projectreactor/reactor-core/3.6.13/reactor-core-3.6.13.jar:/home/yury/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/3.3.8/spring-boot-starter-webflux-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.8/spring-boot-starter-json-3.3.8.jar:/home/yury/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.3/jackson-datatype-jdk8-2.17.3.jar:/home/yury/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.3/jackson-module-parameter-names-2.17.3.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/3.3.8/spring-boot-starter-reactor-netty-3.3.8.jar:/home/yury/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.1.26/reactor-netty-http-1.1.26.jar:/home/yury/.m2/repository/io/netty/netty-resolver-dns/4.1.117.Final/netty-resolver-dns-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-codec-dns/4.1.117.Final/netty-codec-dns-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.117.Final/netty-resolver-dns-native-macos-4.1.117.Final-osx-x86_64.jar:/home/yury/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.117.Final/netty-resolver-dns-classes-macos-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-transport-native-epoll/4.1.117.Final/netty-transport-native-epoll-4.1.117.Final-linux-x86_64.jar:/home/yury/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.117.Final/netty-transport-classes-epoll-4.1.117.Final.jar:/home/yury/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.1.26/reactor-netty-core-1.1.26.jar:/home/yury/.m2/repository/org/springframework/spring-web/6.1.16/spring-web-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-beans/6.1.16/spring-beans-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-webflux/6.1.16/spring-webflux-6.1.16.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.3.8/spring-boot-starter-actuator-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.3.8/spring-boot-actuator-autoconfigure-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-actuator/3.3.8/spring-boot-actuator-3.3.8.jar:/home/yury/.m2/repository/io/micrometer/micrometer-observation/1.13.10/micrometer-observation-1.13.10.jar:/home/yury/.m2/repository/io/micrometer/micrometer-commons/1.13.10/micrometer-commons-1.13.10.jar:/home/yury/.m2/repository/io/micrometer/micrometer-jakarta9/1.13.10/micrometer-jakarta9-1.13.10.jar:/home/yury/.m2/repository/io/micrometer/micrometer-core/1.13.10/micrometer-core-1.13.10.jar:/home/yury/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/home/yury/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/yury/.m2/repository/org/mock-server/mockserver-netty/5.15.0/mockserver-netty-5.15.0.jar:/home/yury/.m2/repository/org/mock-server/mockserver-core/5.15.0/mockserver-core-5.15.0.jar:/home/yury/.m2/repository/com/lmax/disruptor/3.4.4/disruptor-3.4.4.jar:/home/yury/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/home/yury/.m2/repository/io/netty/netty-codec-socks/4.1.117.Final/netty-codec-socks-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-handler-proxy/4.1.117.Final/netty-handler-proxy-4.1.117.Final.jar:/home/yury/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/home/yury/.m2/repository/com/fasterxml/uuid/java-uuid-generator/4.1.0/java-uuid-generator-4.1.0.jar:/home/yury/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.72/bcprov-jdk18on-1.72.jar:/home/yury/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.72/bcpkix-jdk18on-1.72.jar:/home/yury/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.72/bcutil-jdk18on-1.72.jar:/home/yury/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.28/nimbus-jose-jwt-9.28.jar:/home/yury/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/home/yury/.m2/repository/org/apache/velocity/velocity-engine-scripting/2.3/velocity-engine-scripting-2.3.jar:/home/yury/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/home/yury/.m2/repository/org/apache/velocity/tools/velocity-tools-generic/3.1/velocity-tools-generic-3.1.jar:/home/yury/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/yury/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/yury/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/yury/.m2/repository/org/apache/commons/commons-digester3/3.2/commons-digester3-3.2.jar:/home/yury/.m2/repository/com/github/cliftonlabs/json-simple/3.0.2/json-simple-3.0.2.jar:/home/yury/.m2/repository/com/samskivert/jmustache/1.16/jmustache-1.16.jar:/home/yury/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.36.0/json-unit-core-2.36.0.jar:/home/yury/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/yury/.m2/repository/com/networknt/json-schema-validator/1.0.76/json-schema-validator-1.0.76.jar:/home/yury/.m2/repository/com/ethlo/time/itu/1.7.0/itu-1.7.0.jar:/home/yury/.m2/repository/io/swagger/parser/v3/swagger-parser/2.1.10/swagger-parser-2.1.10.jar:/home/yury/.m2/repository/io/swagger/parser/v3/swagger-parser-v2-converter/2.1.10/swagger-parser-v2-converter-2.1.10.jar:/home/yury/.m2/repository/io/swagger/swagger-core/1.6.9/swagger-core-1.6.9.jar:/home/yury/.m2/repository/io/swagger/swagger-models/1.6.9/swagger-models-1.6.9.jar:/home/yury/.m2/repository/io/swagger/swagger-annotations/1.6.9/swagger-annotations-1.6.9.jar:/home/yury/.m2/repository/io/swagger/swagger-parser/1.0.64/swagger-parser-1.0.64.jar:/home/yury/.m2/repository/io/swagger/swagger-compat-spec-parser/1.0.64/swagger-compat-spec-parser-1.0.64.jar:/home/yury/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/home/yury/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/home/yury/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/home/yury/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/home/yury/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/home/yury/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/home/yury/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/home/yury/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/home/yury/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/yury/.m2/repository/com/github/java-json-tools/json-patch/1.13/json-patch-1.13.jar:/home/yury/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/home/yury/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/home/yury/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/home/yury/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/yury/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/yury/.m2/repository/io/swagger/core/v3/swagger-models/2.2.8/swagger-models-2.2.8.jar:/home/yury/.m2/repository/io/swagger/parser/v3/swagger-parser-core/2.1.10/swagger-parser-core-2.1.10.jar:/home/yury/.m2/repository/io/swagger/parser/v3/swagger-parser-v3/2.1.10/swagger-parser-v3-2.1.10.jar:/home/yury/.m2/repository/io/swagger/core/v3/swagger-core/2.2.8/swagger-core-2.2.8.jar:/home/yury/.m2/repository/io/swagger/core/v3/swagger-annotations/2.2.8/swagger-annotations-2.2.8.jar:/home/yury/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.17.3/jackson-dataformat-yaml-2.17.3.jar:/home/yury/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-impl-4.0.5.jar:/home/yury/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/yury/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/yury/.m2/repository/org/xmlunit/xmlunit-placeholders/2.9.1/xmlunit-placeholders-2.9.1.jar:/home/yury/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/home/yury/.m2/repository/io/github/classgraph/classgraph/4.8.154/classgraph-4.8.154.jar:/home/yury/.m2/repository/io/prometheus/simpleclient/0.16.0/simpleclient-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_tracer_otel/0.16.0/simpleclient_tracer_otel-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_tracer_common/0.16.0/simpleclient_tracer_common-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_tracer_otel_agent/0.16.0/simpleclient_tracer_otel_agent-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_httpserver/0.16.0/simpleclient_httpserver-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_common/0.16.0/simpleclient_common-0.16.0.jar:/home/yury/.m2/repository/io/netty/netty-buffer/4.1.117.Final/netty-buffer-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-codec/4.1.117.Final/netty-codec-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-codec-http/4.1.117.Final/netty-codec-http-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-codec-http2/4.1.117.Final/netty-codec-http2-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-common/4.1.117.Final/netty-common-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-handler/4.1.117.Final/netty-handler-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-resolver/4.1.117.Final/netty-resolver-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.117.Final/netty-transport-native-unix-common-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-transport/4.1.117.Final/netty-transport-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-classes/2.0.69.Final/netty-tcnative-classes-2.0.69.Final.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-linux-x86_64.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-linux-aarch_64.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-osx-x86_64.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-osx-aarch_64.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-windows-x86_64.jar:/home/yury/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/yury/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/yury/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/yury/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/yury/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/yury/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/yury/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/yury/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/yury/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/home/yury/.m2/repository/org/mock-server/mockserver-client-java/5.15.0/mockserver-client-java-5.15.0.jar:/home/yury/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/yury/.m2/repository/com/hydroyura/prodms/common/common-lib/1.0.0-SNAPSHOT/common-lib-1.0.0-SNAPSHOT.jar:/home/yury/.m2/repository/org/mapstruct/mapstruct/1.6.3/mapstruct-1.6.3.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.8/spring-boot-starter-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot/3.3.8/spring-boot-3.3.8.jar:/home/yury/.m2/repository/org/springframework/spring-context/6.1.16/spring-context-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-aop/6.1.16/spring-aop-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-expression/6.1.16/spring-expression-6.1.16.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.8/spring-boot-autoconfigure-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.8/spring-boot-starter-logging-3.3.8.jar:/home/yury/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/home/yury/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/home/yury/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/home/yury/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/home/yury/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/home/yury/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/yury/.m2/repository/org/springframework/spring-core/6.1.16/spring-core-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-jcl/6.1.16/spring-jcl-6.1.16.jar:/home/yury/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/yury/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.8/spring-boot-starter-test-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-test/3.3.8/spring-boot-test-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.8/spring-boot-test-autoconfigure-3.3.8.jar:/home/yury/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/yury/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/yury/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/yury/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/home/yury/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/home/yury/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/yury/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/yury/.m2/repository/net/bytebuddy/byte-buddy/1.14.19/byte-buddy-1.14.19.jar:/home/yury/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/home/yury/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/yury/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.5/junit-jupiter-5.10.5.jar:/home/yury/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.5/junit-jupiter-api-5.10.5.jar:/home/yury/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/yury/.m2/repository/org/junit/platform/junit-platform-commons/1.10.5/junit-platform-commons-1.10.5.jar:/home/yury/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/yury/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.5/junit-jupiter-params-5.10.5.jar:/home/yury/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.5/junit-jupiter-engine-5.10.5.jar:/home/yury/.m2/repository/org/junit/platform/junit-platform-engine/1.10.5/junit-platform-engine-1.10.5.jar:/home/yury/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/home/yury/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar:/home/yury/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/yury/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/home/yury/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/home/yury/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/yury/.m2/repository/org/springframework/spring-test/6.1.16/spring-test-6.1.16.jar:/home/yury/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value="Europe/Minsk"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/yury/.jdks/azul-17.0.13/lib"/>
+    <property name="sun.java.command" value="/home/yury/projects/prodms/gateway/server/target/surefire/surefirebooter-20250212214843867_3.jar /home/yury/projects/prodms/gateway/server/target/surefire 2025-02-12T21-48-43_766-jvmRun1 surefire-20250212214843867_1tmp surefire_0-20250212214843867_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/yury/projects/prodms/gateway/server/target/test-classes:/home/yury/projects/prodms/gateway/server/target/classes:/home/yury/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.3/jackson-datatype-jsr310-2.17.3.jar:/home/yury/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.3/jackson-annotations-2.17.3.jar:/home/yury/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.3/jackson-core-2.17.3.jar:/home/yury/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.3/jackson-databind-2.17.3.jar:/home/yury/.m2/repository/com/hydroyura/prodms/files/client/1.0.0-SNAPSHOT/client-1.0.0-SNAPSHOT.jar:/home/yury/.m2/repository/com/hydroyura/prodms/gateway/client/1.0.0-SNAPSHOT/client-1.0.0-SNAPSHOT.jar:/home/yury/.m2/repository/com/hydroyura/prodms/archive/client/1.0.0-SNAPSHOT/client-1.0.0-SNAPSHOT.jar:/home/yury/.m2/repository/org/apache/commons/commons-text/1.12.0/commons-text-1.12.0.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-starter-gateway/4.1.6/spring-cloud-starter-gateway-4.1.6.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-starter/4.1.5/spring-cloud-starter-4.1.5.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-context/4.1.5/spring-cloud-context-4.1.5.jar:/home/yury/.m2/repository/org/springframework/security/spring-security-crypto/6.3.6/spring-security-crypto-6.3.6.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-commons/4.1.5/spring-cloud-commons-4.1.5.jar:/home/yury/.m2/repository/org/springframework/security/spring-security-rsa/1.1.3/spring-security-rsa-1.1.3.jar:/home/yury/.m2/repository/org/springframework/cloud/spring-cloud-gateway-server/4.1.6/spring-cloud-gateway-server-4.1.6.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.3.8/spring-boot-starter-validation-3.3.8.jar:/home/yury/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/home/yury/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.2.Final/hibernate-validator-8.0.2.Final.jar:/home/yury/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/yury/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/yury/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/home/yury/.m2/repository/io/projectreactor/addons/reactor-extra/3.5.2/reactor-extra-3.5.2.jar:/home/yury/.m2/repository/io/projectreactor/reactor-core/3.6.13/reactor-core-3.6.13.jar:/home/yury/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/3.3.8/spring-boot-starter-webflux-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.8/spring-boot-starter-json-3.3.8.jar:/home/yury/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.3/jackson-datatype-jdk8-2.17.3.jar:/home/yury/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.3/jackson-module-parameter-names-2.17.3.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/3.3.8/spring-boot-starter-reactor-netty-3.3.8.jar:/home/yury/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.1.26/reactor-netty-http-1.1.26.jar:/home/yury/.m2/repository/io/netty/netty-resolver-dns/4.1.117.Final/netty-resolver-dns-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-codec-dns/4.1.117.Final/netty-codec-dns-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.117.Final/netty-resolver-dns-native-macos-4.1.117.Final-osx-x86_64.jar:/home/yury/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.117.Final/netty-resolver-dns-classes-macos-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-transport-native-epoll/4.1.117.Final/netty-transport-native-epoll-4.1.117.Final-linux-x86_64.jar:/home/yury/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.117.Final/netty-transport-classes-epoll-4.1.117.Final.jar:/home/yury/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.1.26/reactor-netty-core-1.1.26.jar:/home/yury/.m2/repository/org/springframework/spring-web/6.1.16/spring-web-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-beans/6.1.16/spring-beans-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-webflux/6.1.16/spring-webflux-6.1.16.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.3.8/spring-boot-starter-actuator-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.3.8/spring-boot-actuator-autoconfigure-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-actuator/3.3.8/spring-boot-actuator-3.3.8.jar:/home/yury/.m2/repository/io/micrometer/micrometer-observation/1.13.10/micrometer-observation-1.13.10.jar:/home/yury/.m2/repository/io/micrometer/micrometer-commons/1.13.10/micrometer-commons-1.13.10.jar:/home/yury/.m2/repository/io/micrometer/micrometer-jakarta9/1.13.10/micrometer-jakarta9-1.13.10.jar:/home/yury/.m2/repository/io/micrometer/micrometer-core/1.13.10/micrometer-core-1.13.10.jar:/home/yury/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/home/yury/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/yury/.m2/repository/org/mock-server/mockserver-netty/5.15.0/mockserver-netty-5.15.0.jar:/home/yury/.m2/repository/org/mock-server/mockserver-core/5.15.0/mockserver-core-5.15.0.jar:/home/yury/.m2/repository/com/lmax/disruptor/3.4.4/disruptor-3.4.4.jar:/home/yury/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/home/yury/.m2/repository/io/netty/netty-codec-socks/4.1.117.Final/netty-codec-socks-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-handler-proxy/4.1.117.Final/netty-handler-proxy-4.1.117.Final.jar:/home/yury/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/home/yury/.m2/repository/com/fasterxml/uuid/java-uuid-generator/4.1.0/java-uuid-generator-4.1.0.jar:/home/yury/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.72/bcprov-jdk18on-1.72.jar:/home/yury/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.72/bcpkix-jdk18on-1.72.jar:/home/yury/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.72/bcutil-jdk18on-1.72.jar:/home/yury/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.28/nimbus-jose-jwt-9.28.jar:/home/yury/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/home/yury/.m2/repository/org/apache/velocity/velocity-engine-scripting/2.3/velocity-engine-scripting-2.3.jar:/home/yury/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/home/yury/.m2/repository/org/apache/velocity/tools/velocity-tools-generic/3.1/velocity-tools-generic-3.1.jar:/home/yury/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/yury/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/yury/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/yury/.m2/repository/org/apache/commons/commons-digester3/3.2/commons-digester3-3.2.jar:/home/yury/.m2/repository/com/github/cliftonlabs/json-simple/3.0.2/json-simple-3.0.2.jar:/home/yury/.m2/repository/com/samskivert/jmustache/1.16/jmustache-1.16.jar:/home/yury/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.36.0/json-unit-core-2.36.0.jar:/home/yury/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/yury/.m2/repository/com/networknt/json-schema-validator/1.0.76/json-schema-validator-1.0.76.jar:/home/yury/.m2/repository/com/ethlo/time/itu/1.7.0/itu-1.7.0.jar:/home/yury/.m2/repository/io/swagger/parser/v3/swagger-parser/2.1.10/swagger-parser-2.1.10.jar:/home/yury/.m2/repository/io/swagger/parser/v3/swagger-parser-v2-converter/2.1.10/swagger-parser-v2-converter-2.1.10.jar:/home/yury/.m2/repository/io/swagger/swagger-core/1.6.9/swagger-core-1.6.9.jar:/home/yury/.m2/repository/io/swagger/swagger-models/1.6.9/swagger-models-1.6.9.jar:/home/yury/.m2/repository/io/swagger/swagger-annotations/1.6.9/swagger-annotations-1.6.9.jar:/home/yury/.m2/repository/io/swagger/swagger-parser/1.0.64/swagger-parser-1.0.64.jar:/home/yury/.m2/repository/io/swagger/swagger-compat-spec-parser/1.0.64/swagger-compat-spec-parser-1.0.64.jar:/home/yury/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/home/yury/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/home/yury/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/home/yury/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/home/yury/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/home/yury/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/home/yury/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/home/yury/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/home/yury/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/yury/.m2/repository/com/github/java-json-tools/json-patch/1.13/json-patch-1.13.jar:/home/yury/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/home/yury/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/home/yury/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/home/yury/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/yury/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/yury/.m2/repository/io/swagger/core/v3/swagger-models/2.2.8/swagger-models-2.2.8.jar:/home/yury/.m2/repository/io/swagger/parser/v3/swagger-parser-core/2.1.10/swagger-parser-core-2.1.10.jar:/home/yury/.m2/repository/io/swagger/parser/v3/swagger-parser-v3/2.1.10/swagger-parser-v3-2.1.10.jar:/home/yury/.m2/repository/io/swagger/core/v3/swagger-core/2.2.8/swagger-core-2.2.8.jar:/home/yury/.m2/repository/io/swagger/core/v3/swagger-annotations/2.2.8/swagger-annotations-2.2.8.jar:/home/yury/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.17.3/jackson-dataformat-yaml-2.17.3.jar:/home/yury/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-impl-4.0.5.jar:/home/yury/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/yury/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/yury/.m2/repository/org/xmlunit/xmlunit-placeholders/2.9.1/xmlunit-placeholders-2.9.1.jar:/home/yury/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/home/yury/.m2/repository/io/github/classgraph/classgraph/4.8.154/classgraph-4.8.154.jar:/home/yury/.m2/repository/io/prometheus/simpleclient/0.16.0/simpleclient-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_tracer_otel/0.16.0/simpleclient_tracer_otel-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_tracer_common/0.16.0/simpleclient_tracer_common-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_tracer_otel_agent/0.16.0/simpleclient_tracer_otel_agent-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_httpserver/0.16.0/simpleclient_httpserver-0.16.0.jar:/home/yury/.m2/repository/io/prometheus/simpleclient_common/0.16.0/simpleclient_common-0.16.0.jar:/home/yury/.m2/repository/io/netty/netty-buffer/4.1.117.Final/netty-buffer-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-codec/4.1.117.Final/netty-codec-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-codec-http/4.1.117.Final/netty-codec-http-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-codec-http2/4.1.117.Final/netty-codec-http2-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-common/4.1.117.Final/netty-common-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-handler/4.1.117.Final/netty-handler-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-resolver/4.1.117.Final/netty-resolver-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.117.Final/netty-transport-native-unix-common-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-transport/4.1.117.Final/netty-transport-4.1.117.Final.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-classes/2.0.69.Final/netty-tcnative-classes-2.0.69.Final.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-linux-x86_64.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-linux-aarch_64.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-osx-x86_64.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-osx-aarch_64.jar:/home/yury/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.69.Final/netty-tcnative-boringssl-static-2.0.69.Final-windows-x86_64.jar:/home/yury/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/yury/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/yury/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/yury/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/yury/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/yury/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/yury/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/yury/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/yury/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/home/yury/.m2/repository/org/mock-server/mockserver-client-java/5.15.0/mockserver-client-java-5.15.0.jar:/home/yury/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/yury/.m2/repository/com/hydroyura/prodms/common/common-lib/1.0.0-SNAPSHOT/common-lib-1.0.0-SNAPSHOT.jar:/home/yury/.m2/repository/org/mapstruct/mapstruct/1.6.3/mapstruct-1.6.3.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.8/spring-boot-starter-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot/3.3.8/spring-boot-3.3.8.jar:/home/yury/.m2/repository/org/springframework/spring-context/6.1.16/spring-context-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-aop/6.1.16/spring-aop-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-expression/6.1.16/spring-expression-6.1.16.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.8/spring-boot-autoconfigure-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.8/spring-boot-starter-logging-3.3.8.jar:/home/yury/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/home/yury/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/home/yury/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/home/yury/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/home/yury/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/home/yury/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/yury/.m2/repository/org/springframework/spring-core/6.1.16/spring-core-6.1.16.jar:/home/yury/.m2/repository/org/springframework/spring-jcl/6.1.16/spring-jcl-6.1.16.jar:/home/yury/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/yury/.m2/repository/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.8/spring-boot-starter-test-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-test/3.3.8/spring-boot-test-3.3.8.jar:/home/yury/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.8/spring-boot-test-autoconfigure-3.3.8.jar:/home/yury/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/yury/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/yury/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/yury/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/home/yury/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/home/yury/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/yury/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/yury/.m2/repository/net/bytebuddy/byte-buddy/1.14.19/byte-buddy-1.14.19.jar:/home/yury/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/home/yury/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/yury/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.5/junit-jupiter-5.10.5.jar:/home/yury/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.5/junit-jupiter-api-5.10.5.jar:/home/yury/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/yury/.m2/repository/org/junit/platform/junit-platform-commons/1.10.5/junit-platform-commons-1.10.5.jar:/home/yury/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/yury/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.5/junit-jupiter-params-5.10.5.jar:/home/yury/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.5/junit-jupiter-engine-5.10.5.jar:/home/yury/.m2/repository/org/junit/platform/junit-platform-engine/1.10.5/junit-platform-engine-1.10.5.jar:/home/yury/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/home/yury/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar:/home/yury/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/yury/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/home/yury/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/home/yury/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/yury/.m2/repository/org/springframework/spring-test/6.1.16/spring-test-6.1.16.jar:/home/yury/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/yury"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="/home/yury/.jdks/azul-17.0.13"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/yury/projects/prodms/gateway/server"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/yury/projects/prodms/gateway/server/target/surefire/surefirebooter-20250212214843867_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.13+11-LTS"/>
+    <property name="user.name" value="yury"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-51-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu17.54+21-CA"/>
+    <property name="localRepository" value="/home/yury/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="idea.version" value="2024.3.2.2"/>
+    <property name="java.version" value="17.0.13"/>
+    <property name="user.dir" value="/home/yury/projects/prodms/gateway/server"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="55788"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="17.0.13+11-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="https.protocols" value="TLSv1,TLSv1.1,TLSv1.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="contextLoad" classname="com.hydroyura.prodms.gateway.server.ServerTest" time="1.334">
+    <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+21:48:44.637 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.hydroyura.prodms.gateway.server.ServerTest]: ServerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:48:44.738 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.hydroyura.prodms.gateway.server.Server for test class com.hydroyura.prodms.gateway.server.ServerTest
+21:48:45.461 [MockServer-EventLog0] INFO org.mockserver.log.MockServerEventLog -- 8089 started on port: 8089
+21:48:45.474 [MockServer-EventLog3] INFO org.mockserver.log.MockServerEventLog -- 8088 started on port: 8088
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.8)
+
+2025-02-12T21:48:45.889+03:00  INFO 55788 --- [           main] c.h.prodms.gateway.server.ServerTest     : Starting ServerTest using Java 17.0.13 with PID 55788 (started by yury in /home/yury/projects/prodms/gateway/server)
+2025-02-12T21:48:45.894+03:00  INFO 55788 --- [           main] c.h.prodms.gateway.server.ServerTest     : No active profile set, falling back to 1 default profile: "default"
+2025-02-12T21:48:47.018+03:00  INFO 55788 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0506daf7-0225-365a-8edb-d4ccb94770f9
+2025-02-12T21:48:47.663+03:00  WARN 55788 --- [           main] o.s.b.a.m.MustacheAutoConfiguration      : Cannot find template location: classpath:/templates/ (please add some templates, check your Mustache configuration, or set spring.mustache.check-template-location=false)
+2025-02-12T21:48:48.066+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-02-12T21:48:48.066+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-02-12T21:48:48.066+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-02-12T21:48:48.066+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-02-12T21:48:48.066+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-02-12T21:48:48.067+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-02-12T21:48:48.067+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-02-12T21:48:48.067+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-02-12T21:48:48.067+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-02-12T21:48:48.067+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-02-12T21:48:48.067+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-02-12T21:48:48.067+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-02-12T21:48:48.067+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-02-12T21:48:48.067+03:00  INFO 55788 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-02-12T21:48:48.465+03:00  INFO 55788 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-12T21:48:48.829+03:00  INFO 55788 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 38967 (http)
+2025-02-12T21:48:48.926+03:00  INFO 55788 --- [           main] c.h.prodms.gateway.server.ServerTest     : Started ServerTest in 3.423 seconds (process running for 4.964)
+2025-02-12T21:48:49.926+03:00  INFO 55788 --- [erver-EventLog0] org.mockserver.log.MockServerEventLog    : 8089 creating expectation:
+
+  {
+    "httpRequest" : {
+      "method" : "GET",
+      "path" : "/api/v1/units/test-number-1",
+      "headers" : {
+        "content-type" : [ "application/json" ]
+      }
+    },
+    "httpResponse" : {
+      "statusCode" : 200,
+      "headers" : {
+        "content-type" : [ "application/json" ]
+      },
+      "body" : "{\"id\":\"2bb40b5e-0854-4cab-b625-e371e59a8775\",\"timestamp\":null,\"data\":{\"number\":\"test-number-1\",\"name\":null,\"type\":\"PART\",\"status\":\"DESIGN\",\"version\":1,\"createdAt\":null,\"updatedAt\":null,\"additional\":null,\"history\":null},\"warnings\":[],\"errors\":[]}"
+    },
+    "id" : "d55b225c-00bd-4e6f-bdb9-5377971db116",
+    "priority" : 0,
+    "timeToLive" : {
+      "unlimited" : true
+    },
+    "times" : {
+      "unlimited" : true
+    }
+  }
+
+ with id:
+
+  d55b225c-00bd-4e6f-bdb9-5377971db116
+
+2025-02-12T21:48:50.082+03:00  INFO 55788 --- [ux-http-epoll-2] c.h.p.g.s.s.f.global.LogGlobalFilter     : Got [GET] request with id = [d1e11217-1] to uri = [http://localhost:38967/api/v1/units/test-number-1] at ts = [1739386130]
+2025-02-12T21:48:50.115+03:00  INFO 55788 --- [erver-EventLog0] org.mockserver.log.MockServerEventLog    : 8089 received request:
+
+  {
+    "method" : "GET",
+    "path" : "/api/v1/units/test-number-1",
+    "headers" : {
+      "user-agent" : [ "ReactorNetty/1.1.26" ],
+      "host" : [ "localhost:8089" ],
+      "content-length" : [ "0" ],
+      "accept-encoding" : [ "gzip" ],
+      "accept" : [ "*/*" ],
+      "X-Forwarded-Proto" : [ "http" ],
+      "X-Forwarded-Port" : [ "38967" ],
+      "X-Forwarded-Host" : [ "localhost:38967" ],
+      "X-Forwarded-For" : [ "127.0.0.1" ],
+      "WebTestClient-Request-Id" : [ "1" ],
+      "Forwarded" : [ "proto=http;host=\"localhost:38967\";for=\"127.0.0.1:59144\"" ],
+      "Content-Type" : [ "application/json" ]
+    },
+    "keepAlive" : true,
+    "secure" : false,
+    "protocol" : "HTTP_1_1",
+    "localAddress" : "127.0.0.1:8089",
+    "remoteAddress" : "127.0.0.1:36772"
+  }
+
+2025-02-12T21:48:50.118+03:00  INFO 55788 --- [erver-EventLog0] org.mockserver.log.MockServerEventLog    : 8089 request:
+
+  {
+    "method" : "GET",
+    "path" : "/api/v1/units/test-number-1",
+    "headers" : {
+      "user-agent" : [ "ReactorNetty/1.1.26" ],
+      "host" : [ "localhost:8089" ],
+      "content-length" : [ "0" ],
+      "accept-encoding" : [ "gzip" ],
+      "accept" : [ "*/*" ],
+      "X-Forwarded-Proto" : [ "http" ],
+      "X-Forwarded-Port" : [ "38967" ],
+      "X-Forwarded-Host" : [ "localhost:38967" ],
+      "X-Forwarded-For" : [ "127.0.0.1" ],
+      "WebTestClient-Request-Id" : [ "1" ],
+      "Forwarded" : [ "proto=http;host=\"localhost:38967\";for=\"127.0.0.1:59144\"" ],
+      "Content-Type" : [ "application/json" ]
+    },
+    "keepAlive" : true,
+    "secure" : false,
+    "protocol" : "HTTP_1_1",
+    "localAddress" : "127.0.0.1:8089",
+    "remoteAddress" : "127.0.0.1:36772"
+  }
+
+ matched expectation:
+
+  {
+    "httpRequest" : {
+      "method" : "GET",
+      "path" : "/api/v1/units/test-number-1",
+      "headers" : {
+        "content-type" : [ "application/json" ]
+      }
+    },
+    "httpResponse" : {
+      "statusCode" : 200,
+      "headers" : {
+        "content-type" : [ "application/json" ]
+      },
+      "body" : "{\"id\":\"2bb40b5e-0854-4cab-b625-e371e59a8775\",\"timestamp\":null,\"data\":{\"number\":\"test-number-1\",\"name\":null,\"type\":\"PART\",\"status\":\"DESIGN\",\"version\":1,\"createdAt\":null,\"updatedAt\":null,\"additional\":null,\"history\":null},\"warnings\":[],\"errors\":[]}"
+    },
+    "id" : "d55b225c-00bd-4e6f-bdb9-5377971db116",
+    "priority" : 0,
+    "timeToLive" : {
+      "unlimited" : true
+    },
+    "times" : {
+      "unlimited" : true
+    }
+  }
+
+2025-02-12T21:48:50.121+03:00  INFO 55788 --- [erver-EventLog0] org.mockserver.log.MockServerEventLog    : 8089 returning response:
+
+  {
+    "statusCode" : 200,
+    "headers" : {
+      "content-type" : [ "application/json" ]
+    },
+    "body" : "{\"id\":\"2bb40b5e-0854-4cab-b625-e371e59a8775\",\"timestamp\":null,\"data\":{\"number\":\"test-number-1\",\"name\":null,\"type\":\"PART\",\"status\":\"DESIGN\",\"version\":1,\"createdAt\":null,\"updatedAt\":null,\"additional\":null,\"history\":null},\"warnings\":[],\"errors\":[]}"
+  }
+
+ for request:
+
+  {
+    "method" : "GET",
+    "path" : "/api/v1/units/test-number-1",
+    "headers" : {
+      "user-agent" : [ "ReactorNetty/1.1.26" ],
+      "host" : [ "localhost:8089" ],
+      "content-length" : [ "0" ],
+      "accept-encoding" : [ "gzip" ],
+      "accept" : [ "*/*" ],
+      "X-Forwarded-Proto" : [ "http" ],
+      "X-Forwarded-Port" : [ "38967" ],
+      "X-Forwarded-Host" : [ "localhost:38967" ],
+      "X-Forwarded-For" : [ "127.0.0.1" ],
+      "WebTestClient-Request-Id" : [ "1" ],
+      "Forwarded" : [ "proto=http;host=\"localhost:38967\";for=\"127.0.0.1:59144\"" ],
+      "Content-Type" : [ "application/json" ]
+    },
+    "keepAlive" : true,
+    "secure" : false,
+    "protocol" : "HTTP_1_1",
+    "localAddress" : "127.0.0.1:8089",
+    "remoteAddress" : "127.0.0.1:36772"
+  }
+
+ for action:
+
+  {
+    "statusCode" : 200,
+    "headers" : {
+      "content-type" : [ "application/json" ]
+    },
+    "body" : "{\"id\":\"2bb40b5e-0854-4cab-b625-e371e59a8775\",\"timestamp\":null,\"data\":{\"number\":\"test-number-1\",\"name\":null,\"type\":\"PART\",\"status\":\"DESIGN\",\"version\":1,\"createdAt\":null,\"updatedAt\":null,\"additional\":null,\"history\":null},\"warnings\":[],\"errors\":[]}"
+  }
+
+ from expectation:
+
+  d55b225c-00bd-4e6f-bdb9-5377971db116
+
+2025-02-12T21:48:50.204+03:00 ERROR 55788 --- [or-http-epoll-3] a.w.r.e.AbstractErrorWebExceptionHandler : [d1e11217-1]  500 Server Error for HTTP GET "/api/v1/units/test-number-1"
+
+org.springframework.web.reactive.function.client.WebClientRequestException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:8085
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.16.jar:6.1.16]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to GET http://localhost:8085/api/v1/drawings/test-number-1 [DefaultWebClient]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/api/v1/units/test-number-1" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:136) ~[spring-webflux-6.1.16.jar:6.1.16]
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:328) ~[reactor-netty-http-1.1.26.jar:1.1.26]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:172) ~[reactor-netty-core-1.1.26.jar:1.1.26]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:480) ~[reactor-netty-core-1.1.26.jar:1.1.26]
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:442) ~[reactor-netty-core-1.1.26.jar:1.1.26]
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:583) ~[reactor-netty-core-1.1.26.jar:1.1.26]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.Operators.error(Operators.java:198) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.6.13.jar:3.6.13]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:576) ~[reactor-netty-core-1.1.26.jar:1.1.26]
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:522) ~[reactor-netty-core-1.1.26.jar:1.1.26]
+		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:261) ~[reactor-netty-core-1.1.26.jar:1.1.26]
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.fulfillConnectPromise(AbstractEpollChannel.java:679) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:698) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:567) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:491) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+		at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166) ~[netty-transport-native-unix-common-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[netty-transport-native-unix-common-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:359) ~[netty-transport-native-unix-common-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:715) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:692) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:567) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:491) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.117.Final.jar:4.1.117.Final]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+]]></system-out>
+  </testcase>
+</testsuite>
