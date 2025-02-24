@@ -14,5 +14,5 @@ spring:
         - id: units-create-update
           uri: ${microservices.urls.archive}
           predicates:
-            - Method=POST,PATCH,PUT
-            - Path=/api/v1/units/*
+            - Method=POST,PATCH,PUT,GET
+            - Path=/api/v1/units
