@@ -16,3 +16,8 @@ spring:
           predicates:
             - Method=POST,PATCH,PUT,GET
             - Path=/api/v1/units,/api/v1/units/{number}
+        - id: files
+          uri: ${microservices.urls.files}
+          predicates:
+            - Method=POST,GET
+            - Path=/api/v1/drawings/{number}
