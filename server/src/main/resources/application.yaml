@@ -1,7 +1,11 @@
+server:
+  port: 8050
+
 microservices:
   urls:
     archive: ${ARCHIVE_URL:http://localhost:8089}
     files: ${FILES_URL:http://localhost:8088}
+    tech: ${TECH_URL:http://localhost:8087}
 
 logs:
   detail:
@@ -21,3 +25,8 @@ spring:
           predicates:
             - Method=POST,GET
             - Path=/api/v1/drawings/{number}
+        - id: tech
+          uri: ${microservices.urls.tech}
+          predicates:
+            - Method=POST,GET
+            - Path=/api/v1/equipments,/api/v1/equipments/{number}
