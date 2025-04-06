@@ -43,3 +43,4 @@ spring:
         jwt:
           issuer-uri: ${microservices.urls.auth}  # URL Auth Server
           jwk-set-uri: ${microservices.urls.auth}/oauth2/jwks  # Для JWT
+
