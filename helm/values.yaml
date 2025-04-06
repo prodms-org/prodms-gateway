@@ -10,7 +10,7 @@ basic:
   
   app:
     id: "gateway"
-    port: "8080"
+    port: 8080
 
 microservices:
   urls:
