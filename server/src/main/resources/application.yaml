@@ -1,11 +1,17 @@
 server:
-  port: 8050
+  port: ${SERVER_PORT:8050}
+
+logging:
+  level:
+    org.springframework.security: ${LOG_LEVEL_SECURITY:TRACE}
+    org.springframework.web: ${LOG_LEVEL_WEB:TRACE}
 
 microservices:
   urls:
     archive: ${ARCHIVE_URL:http://localhost:8089}
     files: ${FILES_URL:http://localhost:8088}
     tech: ${TECH_URL:http://localhost:8087}
+    auth: ${AUTH_URL:http://localhost:9000}
 
 logs:
   detail:
@@ -30,3 +36,10 @@ spring:
           predicates:
             - Method=POST,GET
             - Path=/api/v1/equipments,/api/v1/equipments/{number}
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${microservices.urls.auth}  # URL Auth Server
+          jwk-set-uri: ${microservices.urls.auth}/oauth2/jwks  # Для JWT

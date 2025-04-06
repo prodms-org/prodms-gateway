@@ -6,3 +6,4 @@ metadata:
 data:
   ARCHIVE_URL: {{ required "'microservices.urls.archive' parameter is required" .Values.microservices.urls.archive | quote }}
   FILES_URL: {{ required "'microservices.urls.files' parameter is required" .Values.microservices.urls.files | quote }}
+  AUTH_URL: {{ required "'microservices.urls.auth' parameter is required" .Values.microservices.urls.auth | quote }}

@@ -16,4 +16,5 @@ microservices:
   urls:
     archive: http://archive-svc.prodms.svc:8080
     files: http://files-svc.prodms.svc:8080
+    auth: http://auth-svc.prodms.svc:8000
 
